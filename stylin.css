@@ -2,12 +2,17 @@
     box-sizing: border-box;
 }
 
+img{
+    display: block;
+    max-width: 100%;
+}
 body {
     height: 100vh;
     margin: 0;
     z-index: -20;
     background-color: white;
 }
+
 
 footer {
     z-index: -1;
@@ -20,7 +25,6 @@ footer {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.577);
     color: aliceblue;
-
 }
 
 /*backgroundscheme*/
@@ -58,6 +62,7 @@ footer {
 }
 
 .contact {
+    display: inline-block;
     background-color: rgba(240, 248, 255, 0.792);
     border-radius: 2%;
     align-items: left;
@@ -65,9 +70,11 @@ footer {
     padding: 20px;
     margin-top: 100px;
     width: 30%;
+    object-fit: cover;
 }
+
 /*about page*/
-.aboutinfo{
+.aboutinfo {
     justify-content: center;
     justify-self: center;
     text-align: center;
@@ -80,30 +87,35 @@ footer {
     margin-top: 100px;
     margin-left: 150px;
 }
-.skibiddy{
-    width: 270px;
+
+.skibiddy {
+    justify-self: center;
+    display: flex;
+    max-width: 270px;
     padding: 10px;
 }
 
 /* how information on the mc is styles*/
 .mcprofile {
-    width: 300px;
+    max-width: 300px;
     justify-content: center;
 }
 
 .mcinfo {
-    justify-self: center;
+    justify-content: center;
     position: absolute;
     width: 80%;
     color: aliceblue;
     border: 1px solid gray;
     background-color: rgba(0, 0, 0, 0.7);
     height: auto;
-    margin-top: 50px;
-    margin-left: 150px;
-    margin-bottom: 30px;
-    display: inline-flex;
+    margin-top: 4%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 
 section {
     padding: 5px;
@@ -129,22 +141,26 @@ section {
 
 /* logos */
 .logo {
-    height: 200px;
+    max-height: 200px;
     padding: 30px;
     position: absolute;
     z-index: 200;
 }
-.linklogo{
-    height: 100px;
+
+.linklogo {
+    height: 132px;
     padding: 30px;
     z-index: 200;
+    filter: grayscale(.6);
+    object-fit: cover;
 }
-.imagebuton{
+
+.imagebuton {
     background-color: rgba(0, 0, 0, 0);
     border-color: rgba(0, 0, 0, 0);
 }
+
 /* the nav bar css */
-/*available at:https://www.w3schools.com/css/css_navbar.asp[accessed:20 November 2024]*/
 nav {
     background-color: aliceblue;
     height: 100px;
@@ -190,7 +206,8 @@ nav a {
 /* homepage navigation */
 
 li {
-    display: inline;
+    justify-content: center;
+    display: inline-flex;
     padding: 10px;
     padding-right: 20px;
     padding-left: 20px;
@@ -229,10 +246,13 @@ li:hover,
 
 }
 
-/*loeding screen [accessed]*/
+/*loeding video*/
 #loader {
+    height: 100vh;
+    background-color: black;
     align-items: center;
-    color:black;
+    color: white;
+    text-align: center;
     justify-content: center;
     font-size: xx-large;
     display: flex;
@@ -240,13 +260,17 @@ li:hover,
     z-index: 1000;
     display: flex;
     width: 100%;
-    top: 0;
-    left: 0;
     opacity: 1;
     transition: opacity 1s ease;
 }
 /*hides the content*/
 #content {
-    display: none;
-    
+    transition: opacity 1s ease-in;
+    display: none;   
 }
+.next{
+    transition: all 1s;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+}    
