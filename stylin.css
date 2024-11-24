@@ -144,6 +144,7 @@ section {
     border-color: rgba(0, 0, 0, 0);
 }
 /* the nav bar css */
+/*available at:https://www.w3schools.com/css/css_navbar.asp[accessed:20 November 2024]*/
 nav {
     background-color: aliceblue;
     height: 100px;
@@ -228,7 +229,7 @@ li:hover,
 
 }
 
-/*loeding video*/
+/*loeding screen [accessed]*/
 #loader {
     align-items: center;
     color:black;
@@ -244,8 +245,8 @@ li:hover,
     opacity: 1;
     transition: opacity 1s ease;
 }
-
+/*hides the content*/
 #content {
     display: none;
-    /*hides the content*/
+    
 }
