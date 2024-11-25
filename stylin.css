@@ -29,6 +29,7 @@ footer {
 
 /*backgroundscheme*/
 .vid {
+    resize: auto;
     filter: brightness(50%);
     position: fixed;
     right: 0px;
